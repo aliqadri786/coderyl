@@ -119,5 +119,21 @@
     items: 1
   });
 
+  $('#contact-form').on('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      // Get form values
+      var name = encodeURIComponent($('#name').val());
+      var email = encodeURIComponent($('#email').val());
+      var subject = encodeURIComponent($('#subject').val());
+      var message = encodeURIComponent($('#message').val());
+
+      // Construct the mailto link
+      var mailtoLink = 'mailto:info@coderyl.tech?subject=' + subject + '&body=Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0ASubject: ' + subject + '%0D%0AMessage:%0D%0A' + message;
+
+      // Open the default email client with the mailto link
+      window.location.href = mailtoLink;
+  });
+
 })(jQuery);
 

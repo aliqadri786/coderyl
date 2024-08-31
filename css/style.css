@@ -160,6 +160,7 @@ h6 {
   padding: 0;
   /* margin: 7px 0; */
   max-height: 46px;
+  margin-top: -2.5px;
 }
 
 .main-pages {
@@ -638,6 +639,119 @@ h6 {
   line-height: 24px;
   margin-bottom: 0;
 }
+
+#tech-stack {
+  padding: 70px 0;
+  /* background-color: #f3f6f8; */
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+#tech-stack .section-header {
+  margin-bottom: 40px;
+}
+
+#tech-stack .tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between items */
+  justify-content: space-between;
+}
+
+#tech-stack .tech-box {
+  flex: 1 1 calc(16.666% - 20px); /* 6 items per row, minus the gap */
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(189, 208, 223, .25);
+  transition: transform 100ms ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  border: 1px solid #ebeef1;
+}
+
+#tech-stack .wrapper {
+  padding:30px 0
+}
+
+#tech-stack .tech-title {
+  border-top: 1px solid #ebeef1;
+  width: 100%;
+  display: block;
+  line-height: 1.6;
+  color: #737b87;
+  padding: 10px 5px 12px;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: color 100ms ease-out;
+}
+
+#tech-stack .tech-box img {
+  width: 100px; /* Ensure images fill the container */
+  height: 100px; /* Maintain aspect ratio */
+}
+
+#industries {
+  padding:70px 0
+}
+
+
+
+#industries .industries-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between items */
+  justify-content: space-between;
+}
+
+#industries .industry-box {
+  flex: 1 1 calc(25% - 20px); /* 6 items per row, minus the gap */
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px 0 rgba(189, 208, 223, .25);
+  transition: transform 100ms ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  font-size: 15px;
+  border: 1px solid #ebeef1;
+  padding: 30px;
+}
+
+#industries  i {
+  color: #004a99
+}
+
+
+#industries .industry-box span {
+  margin-top: 20px;
+}
+
+#industries .industry-box img {
+  width: 100%; /* Ensure images fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#industries .industry-box h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 #why-us {
   padding: 60px 0;
